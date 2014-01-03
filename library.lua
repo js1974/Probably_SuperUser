@@ -113,9 +113,9 @@ local command = msg:match("^(.*)$")
         ecn:message("Diffuse Magic queued") 
     end
 	
-  elseif command == "ToK" or command == 122470 then
+  elseif command == "tok" or command == 122470 then
     su.queueSpell = 122470
-        ecn:message("tok queued")	
+        ecn:message("Touch of Karma queued")	
   elseif command == "gw" or command == 117368 then
     su.queueSpell = 117368
         ecn:message("Grapple Weapon queued")	
@@ -342,7 +342,7 @@ function su.createAllMacros( ... )
     CreateMacro("su_Transcendence", "monk_ability_transcendence", "#showtooltip Transcendence\n/su Trans", 1, 1)
     CreateMacro("su_Transfer", "spell_shaman_spectraltransformation", "#showtooltip Transcendence: Transfer\n/su Transfer", 1, 1)
 	CreateMacro("su_fof", "monk_ability_fistoffury", "#showtooltip Fists of Fury\n/su fof", 1, 1)
-	CreateMacro("su_fof", "ability_monk_tigerslust", "/su tl", 1, 1)
+	CreateMacro("su_tl", "ability_monk_tigerslust", "/su tl", 1, 1)
    	CreateMacro("su_nb", "spell_monk_nimblebrew", "/su nb", 1, 1)
 	CreateMacro("su_hs", "ability_monk_healthsphere", "/su fsk", 1, 1)
 	CreateMacro("su_fsk", "ability_monk_flyingdragonkick", "/su fsk", 1, 1)
@@ -360,7 +360,7 @@ function su.macroHelp( ... )
   print("|cFF32ff84Commands:|r\n/su macros - Create all Toggle / Spellqueue Macros")
   print("|cFF32ff84Toggle Macros:|r\n/su toggle - Rotation on/off\n/su interrupt - Interrupt on/off\n/su cooldowns - Offensive Cooldowns on/off\n/su aoe - Multitarget-Rotation on/off\n")
   print("|cFF32ff84Queue Macros:|r\n/su sef | tfour | tfive | gw | disable | fb | trans | transfer | fof | nb | hs | fsk")
-  print("|cFF32ff84Additional Help:|r\nhttp://tinyurl.com/pe-exesu")
+  print("|cFF32ff84Additional Help:|r\https://probablyengine.com/forum/topic1135-superuser-windwalker.html")
 end  
 
 function su.immuneEvents(unit)
