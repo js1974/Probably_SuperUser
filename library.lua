@@ -139,7 +139,10 @@ local command = msg:match("^(.*)$")
         ecn:message("Fortifying Brew queued")	
   elseif command == "fsk" or command == 101545 then
     su.queueSpell = 101545
-        ecn:message("Flying Serpent Kick queued")	
+        ecn:message("Flying Serpent Kick queued")
+  elseif command == "teb" or command == 116740 then
+    su.queueSpell = 116740
+        ecn:message("Tigereye Brew queued")
   elseif command == "sef" or command == 137639 then
     su.queueSpell = 137639
         ecn:message("Storm, Earth & Fire queued")
