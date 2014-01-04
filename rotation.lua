@@ -50,6 +50,7 @@ ProbablyEngine.rotation.register_custom(269, "SuperUser",
   { "115203", "@su.checkQueue(115203)" },
   { "101545", "@su.checkQueue(101545)" },
   { "116740", "@su.checkQueue(116740)" },
+  { "115078", "@su.checkQueue(115078)", "mouseover" },
   { "137639", "@su.checkQueue(137639)", "mouseover" },
   { "115460", "@su.checkQueue(115460)", "ground" },
   { "116841", "@su.checkQueue(116841)", "mouseover"},
@@ -225,7 +226,6 @@ ProbablyEngine.rotation.register_custom(269, "SuperUser",
   
  { "101545", "@su.checkQueue(101545)" },	-- Flying Serpent Kick
  { "116841", "@su.checkQueue(116841)", "mouseover"}, 	-- Tiger's Lust mousoever
- { "115460", "modifier.lalt", "ground" },  -- Healing Sphere
   
   -- Buffs
   { "116781", -- Legacy of the White Tiger
