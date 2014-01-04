@@ -143,6 +143,9 @@ local command = msg:match("^(.*)$")
   elseif command == "teb" or command == 116740 then
     su.queueSpell = 116740
         ecn:message("Tigereye Brew queued")
+  elseif command == "para" or command == 115078 then
+    su.queueSpell = 115078
+        ecn:message("Paralyis queued")
   elseif command == "sef" or command == 137639 then
     su.queueSpell = 137639
         ecn:message("Storm, Earth & Fire queued")
@@ -349,6 +352,8 @@ function su.createAllMacros( ... )
    	CreateMacro("su_nb", "spell_monk_nimblebrew", "/su nb", 1, 1)
 	CreateMacro("su_hs", "ability_monk_healthsphere", "/su fsk", 1, 1)
 	CreateMacro("su_fsk", "ability_monk_flyingdragonkick", "/su fsk", 1, 1)
+	CreateMacro("su_teb", "ability_monk_tigereyebrandy", "/su teb", 1, 1)
+	CreateMacro("su_para", "ability_monk_paralysis", "/su para", 1, 1)
 	
 
     
@@ -361,8 +366,8 @@ end
 function su.macroHelp( ... )
   print("|cFF32ff84SuperUser WW |1.0")
   print("|cFF32ff84Commands:|r\n/su macros - Create all Toggle / Spellqueue Macros")
-  print("|cFF32ff84Toggle Macros:|r\n/su toggle - Rotation on/off\n/su interrupt - Interrupt on/off\n/su cooldowns - Offensive Cooldowns on/off\n/su aoe - Multitarget-Rotation on/off\n")
-  print("|cFF32ff84Queue Macros:|r\n/su sef | tfour | tfive | gw | disable | fb | trans | transfer | fof | nb | hs | fsk")
+  print("|cFF32ff84Toggle Macros:|r\n/su toggle - Rotation on/off\n/su interrupt - Interrupt on/off\n/su cooldowns - Offensive Cooldowns on/off\n/su aoe - Multitarget-Rotation on/off\n/su chistacker - Stack chi ooc\n")
+  print("|cFF32ff84Queue Macros:|r\n/su sef | tfour | tfive | gw | disable | fb | trans | transfer | fof | nb | hs | fsk | teb | para")
   print("|cFF32ff84Additional Help:|r\https://probablyengine.com/forum/topic1135-superuser-windwalker.html")
 end  
 
