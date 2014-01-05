@@ -1,9 +1,0 @@
-## Interface: 50400
-## Title: Probably - |cFF32ff84SuperUser (WW Monk)
-## Notes: ProbablyEngine Windwalker Monk Profile for 5.4
-## Dependencies: Probably
-## Author: SuperUser
-## Version: 1.0
-
-library.lua
-rotation.lua
