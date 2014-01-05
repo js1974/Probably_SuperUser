@@ -1,0 +1,15 @@
+## Interface: 50400
+## Title: Probably - [|c5700DBBDSuperUser|r]
+## Notes: ProbablyEngine Multi-Class Profile for 5.4
+## Dependencies: Probably
+## Author: SuperUser
+## Version: 1.0
+
+## Class Libs
+classlibs\monk\windwalker.lua
+
+
+## Rotations
+rotations\monk\windwalker.lua
+
+
